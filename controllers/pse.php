@@ -1,11 +1,6 @@
 <?php
-require 'vendor/autoload.php';
-$epayco = new Epayco\Epayco(array(
-    "apiKey" => "c40acc8a877f180bf312c79aae0503f7", //P_KEY del comercio ID:93006      afe519dcb445a2b6f70559538e4af578360b5cf5
-    "privateKey" => "b13e95ea247b7cbe1f41724a1cb86d91", //Llave privada del comercio ID:93006      b13e95ea247b7cbe1f41724a1cb86d91
-    "lenguage" => "ES", //Lenguaje en el cual será mostrado por defecto el checkOut de ePayco recibe "ES" o "EN"
-    "test" => false //Parametro que indica si la trnsacción se realizará en modo pruebas = "true" o producción = "false"
-));
+
+require 'apikeys.php';
 /*
  "bankCode": "1040", "bankName": "BANCO AGRARIO"
  "bankCode": "1052", "bankName": "BANCO AV VILLAS"
